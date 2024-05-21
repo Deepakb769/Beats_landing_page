@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(15, 15, 16, 1);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+  overflow: hidden;
+}
+
+
+ul  li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: #0f0f1051;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem 8rem;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  /* list-style-type: none; */
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar ul > li a:hover {
+  
+  color: rgb(122, 118, 118);
+}
+.navbar i {
+  display: none;
+}
+
+/* #headset {
+  height: 509px;
+  padding-left: 100px;
+} */
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #a6a5a5;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  color: rgb(128, 118, 118);
+}
+.hero {
+  display: flex;
+ width: 100%;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 90px;
+}
+
+.hero-container{
+  display: flex;
+  width: 80%;
+  height:100%;
+}
+.hero-lft{
+  width: 30%;
+  height: 100%;
+  
+}
+.hero-lft img{
+  width: 220px;
+  height: auto;
+}
+.hero-rht{
+  width: 70%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  flex-direction: column;
+  
+}
+.hero-rht #onEar{
+  padding-left: 200px;
+}
+.hero-rht p{
+  width: 60%;
+}
+.hero-rht button{
+padding: 0.7rem 1rem;
+background-color: #333;
+border-radius: 5px;
+border:none;
+font-size: 0.8rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+color: aliceblue;
+outline: none;
+}
+.hero-rht button img{
+  width: 15px;
+} 
+
+.text-card > button {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0.8rem 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(187, 176, 176);
+  background-color: rgb(67, 65, 65);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.text-card > button:hover {
+  color: black;
+  background-color: rgb(84, 83, 83);
+}
+.social-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+  height: 200px ;
+  padding-bottom: 4rem;
+}
+
+/* shubham's code start from here  */
+
+.style-section {
+  margin: 50px;
+  text-align: center;
+}
+
+.headphones-list {
+  padding: 80px;
+  /* display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 5%;
+  row-gap: 30%; */
+  display: flex;
+  justify-content: start;
+  gap: 4%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin: 0px 8%;
+}
+
+.headphone-card {
+  background-color: rgb(30 30 33);
+  width: 300px;
+  height: 340px;
+  margin: 7% 0;
+}
+
+.headphone-card img {
+  width: 200px;
+  position: relative;
+  top: -20px;
+}
+.style-section h2 {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(102, 100, 100);
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headphone-name {
+  margin: 0px 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+}
+
+.Addtocart-button {
+  padding: 15px;
+}
+
+.Addtocart-button button {
+  padding: 4px 24px;
+  background-color: rgb(15, 15, 16, 1);
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+}
+
+.Addtocart-button ion-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.Addtocart-button button:hover {
+  box-shadow: 0px 0px 15px grey;
+}
+
+/* Shubham's code end here */
+
+
+#shop-button {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(187, 176, 176);
+  background-color: rgb(52, 44, 44);
+  border: 0;
+  border-radius: 5px;
+  transition: all 0.6s ease;
+}
+#shop-button:hover {
+  color: black;
+  background-color: rgb(163, 205, 28);
+}
+
+
+
+
+
+/* .social-logo > img {
+  padding-top: 200px;
+  padding-right: 100px;
+} */
+
+/* #bag-button {
+  margin:40px 140px;
+} */
+
+.title-logo {
+  margin: 70px 0;
+}
+
+.title-logo img {
+  position: relative;
+  left: 45%;
+}
+
+.product-features {
+  position: relative;
+  bottom: 35px;
+}
+
+.product-descrip {
+  padding: 25px;
+  color: white;
+}
+
+.beat-specs-specification {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div#connect-dis {
+  position: relative;
+  left: 30px;
+}
+
+div#mic-dis {
+  position: relative;
+  left: 30px;
+}
+
+#connection,
+#battery,
+#charge,
+#micro {
+  font-weight: 800;
+}
+
+/* Yuvrajs code start here */
+
+.case {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.case-title {
+  text-align: center;
+}
+
+.more-info-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  
+
+}
+
+
+.case-img-info {
+  display: flex;
+  justify-content: center;
+  background-color:red;
+  
+}
+
+.case-img {
+  padding: 0px 100px;
+}
+
+.case-img img {
+  width: 200px;
+  height: auto;
+}
+
+.case-info p {
+  padding-top: 100px;
+  padding-bottom: 28px;
+  color: grey;
+  padding-right: 1px;
+}
+
+.btn-grey {
+  background-color: #161414 !important;
+}
+
+.buynow-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(22, 20, 20);
+  width: 1000px;
+  min-width: 500px;
+  padding: 4.5rem 6rem;
+  border-radius :20px;
+  
+}
+
+.headphones-info h2 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.headphones-info span {
+  color: grey;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+}
+
+
+/*Yuvrajs code ends here   */
+
+/* Mobile view point */
+
+@media (max-width: 750px) {
+  .navbar{
+    padding: 2rem 3rem;
+  }
+  
+  .navbar ul {
+    display: none;
+}
+.navbar i {
+  font-size: 2rem;
+  display: block;
+}
+
+
+  .specs-section {
+    position: relative;
+  }
+  .beat-specs-specification {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-rht #onEar {
+    width: 250px;
+    padding-left: 0px;
+    margin-bottom: 3rem;
+}
+.social-logo {
+    gap: 3rem;
+}
+  .hero-rht p {
+    width: 100%;
+}
+  .hero-container {
+    
+    width: 90%;
+    height: 100%;
+}
+  .hero .hero-container .hero-lft{
+    width: 50%;
+  }
+  .hero .hero-container .hero-rht{
+    width: 50%;
+  }
+
+  .headphones-list{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    row-gap: 120px;
+    margin-top: 30px;
+    margin-left: -25px;
+  }
+
+  .headphone-card{
+    width: 30rem;
+  }
+
+  .style-section img{
+    margin-left: -45px;
+  
+  }
+
+  .footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px 300px;
+  }
+  .product-support-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 0px -200px; */
+  }
+
+  .product-list{
+    padding-left: 350px;
+    padding-bottom: 50px;
+  }
+
+  .logo-img img{
+    position: relative;
+    top: 150px;
+    right: 270px;
+  }
+.input-img-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 100px;
+  position: relative;
+  top: 50px;
+  right: 125px;
+  padding-bottom: 50px;
+}
+
+}
+
+/* // tablet  */
+@media only screen and (max-width: 768px) {
+
+  /* Styles here */
+}
+/* // smartphone  */
+@media only screen and (max-width: 375px) {
+  /* Styles here */
+  
+  .headphones-list{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    row-gap: 120px;
+    margin-top: 30px;
+    margin-left: -25px;
+  }
+  .headphone-card{
+    width: 300px;
+  }
+
+  .style-section img{
+    margin-left: -45px;
+  
+  }
+
+  .footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px 58%;
+  }
+  .product-support-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 0px -200px; */
+  }
+
+  .product-list{
+    padding-left: 8rem;
+    padding-bottom: 50px;
+  }
+
+  .logo-img img{
+    position: relative;
+    top: 150px;
+    right: 200px;
+  }
+.input-img-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 100px;
+  position: relative;
+  top: 50px;
+  right: 125px;
+  padding-bottom: 50px;
+}
+
+}
+
+/* Ṣhubham's code start from */
+.footer{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.product-support-list{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.product-support-list li{
+  padding-top: 15px;
+  font-size: 15px;
+  color: grey;
+}
+
+.product-support-list h5{
+  font-size: 18px;
+}
+
+.product-list{
+  margin: 0px 100px;
+}
+
+.input-img-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+
+.input-img-box input{
+  padding: 17px;
+  width: 350px;
+  background-color: #33333393;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: -20px;
+}
+
+.footer-logo img{
+  margin-top: -50px;
+  margin: 10px;
+}
+
+.input-img-box button{
+  background-color: #111111;
+  border: none;
+  color: white;
+  position: relative;
+  left: 190px;
+  bottom: 29px;
+  font-size: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 10px 33px;
+  justify-content: space-between;
+}
+
+.input-img-box button img{
+  padding-right: 5px;
+}

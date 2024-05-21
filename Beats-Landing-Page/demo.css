@@ -1,0 +1,62 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.beat_logo {
+    width: 20%;
+    text-align: center;
+}
+
+ul.beatList {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+ul.beatList li {
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.beat_menu {
+    width: 50%;
+}
+#btn {
+    border: 1px solid black;
+    background: #2e2e2e;
+    padding: 0px 40px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.beats_hero{
+    display: flex;
+}
+
+.heroLogo img {
+    position: relative;
+    left: 80px;
+}
+
+.beatsDescrip {
+    position: relative;
+    left: 140px;
+    top: 160px;
+}
+
