@@ -1,16 +1,20 @@
-
+:root{
+    --font-family: "Poppins",sans-serif;
+}
 
 body {
     margin: 0;
     padding: 0;
     background: black;
     color: #ffffff;
+    font-family: var(--font-family);
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
 }
 
 .beat_logo {
@@ -49,14 +53,49 @@ ul.beatList li {
     display: flex;
 }
 
+.heroLogo {
+    width: 40%;
+}
+
 .heroLogo img {
     position: relative;
     left: 80px;
+    bottom: 150px;
 }
 
-.beatsDescrip {
+.heroDescrip {
+    width: 40%;
     position: relative;
     left: 140px;
     top: 160px;
 }
 
+.heroPunch {
+    position: relative;
+    /* left: 180px; */
+    margin-top: 60px;
+}
+
+.heroPrice p {
+    border: 1px solid transparent;
+    background: #2e2e2e;
+    width: fit-content;
+    padding: 10px;
+}
+.brandsLogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.specBody {
+    display: flex;
+    justify-content: space-around;
+}
+.specSection {
+    margin-top: 150px;
+}
+
+.specTitle {
+    text-align: center;
+}
