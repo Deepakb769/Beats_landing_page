@@ -12,9 +12,12 @@ body {
 
 .navbar {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    backdrop-filter: blur(15px);
 }
 
 .beat_logo {
@@ -91,6 +94,7 @@ ul.beatList li {
 .specBody {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .specSection {
     margin-top: 150px;
@@ -99,3 +103,39 @@ ul.beatList li {
 .specTitle {
     text-align: center;
 }
+
+.product-descrip{
+    margin: 25px 0;
+}
+
+.product-descrip h4 {
+    margin: 0;
+}
+
+.product-descrip p {
+    margin: 7px 0;
+}
+
+.prod_speaker, .prod_mic {
+    position: relative;
+    left: 40px;
+}
+
+/* Case style session */
+.case-session {
+    margin: 100px 0;
+}
+
+.case-title {
+    text-align: center;
+}
+
+.case-body {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+/* .case-image, .case-des {
+    width: 50%;
+} */
